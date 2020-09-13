@@ -15,9 +15,9 @@ public class LlenadorExponencial extends LlenadorGeneral {
 		int count;
 		this.tInicio = System.nanoTime();
 		count = exponencial(this.tamanioMuestra);
-		this.tFinal = System.nanoTime(); //Tomamos la hora en que finalizó el algoritmo y la almacenamos en la variable T
+		this.tFinal = System.nanoTime(); //Tomamos la hora en que finalizÃ³ el algoritmo y la almacenamos en la variable T
 		this.tiempo = tFinal - tInicio;
-		System.out.println("Tiempo de ejecución en milisegundos: p6 Exponencial " + tiempo);
+		System.out.println("Tiempo de ejecuciÃ³n en milisegundos: p6 Exponencial " + tiempo);
 		System.out.println("Cantidad de apariciones p6 Exponencial = "+ count);
 				
 		
@@ -30,7 +30,7 @@ public class LlenadorExponencial extends LlenadorGeneral {
 	        return count;
 		}
 		else {
-			  count = count + exponencial(muestra -1); 
+			  count = count + exponencial(muestra -1) + exponencial(muestra -1); 
 			  return count;
 		}
 	}
